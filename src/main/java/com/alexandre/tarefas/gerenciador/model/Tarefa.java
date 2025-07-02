@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 
 @Entity
+@Table(name = "tarefa")
 public class Tarefa {
 
     @Id
@@ -28,4 +29,7 @@ public class Tarefa {
     public void setDataEntrega(LocalDate dataEntrega) { this.dataEntrega = dataEntrega; }
     public String getResponsavel() { return responsavel; }
     public void setResponsavel(String responsavel) { this.responsavel = responsavel; }
+
+    public void setId(Long id) {
+    }
 }
